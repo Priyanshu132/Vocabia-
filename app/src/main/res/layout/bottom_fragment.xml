@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:background="@drawable/round_corner"
+    >
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A2040A"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="normal"
+        android:layout_marginLeft="25dp"
+        android:text="New Word"/>
+
+
+    <EditText
+        android:id="@+id/new1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex: Banish "
+        android:maxLength="50"
+        android:singleLine="true"
+        android:paddingTop="10dp"
+        android:backgroundTint="#CC050C"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginHorizontal="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A2040A"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="normal"
+        android:layout_marginLeft="25dp"
+        android:text="Meaning"/>
+
+    <EditText
+        android:id="@+id/meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:backgroundTint="#CC050C"
+        android:singleLine="true"
+
+        android:paddingLeft="10dp"
+        android:hint="Ex: To send someone away, especially from their country"
+        android:layout_marginHorizontal="20dp"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Add"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="55dp"
+        android:textColor="#FFF"
+        android:background="#CC050C"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

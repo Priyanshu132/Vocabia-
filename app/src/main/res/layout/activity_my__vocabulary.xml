@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".My_Vocabulary">
+
+
+
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A2040A">
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <ProgressBar
+            android:id="@+id/pro"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="5dp"
+        android:layout_above="@id/ll"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="vertical">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycle_list"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noresult"
+            android:text="Oops! No Result "
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textColor="#000"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold|italic" />
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/noresult"
+            android:background="@drawable/search_bg"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            tools:ignore="InvalidId" />
+
+
+        <ImageView
+            android:id="@+id/voice"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_keyboard_voice_black_24dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
